@@ -1,0 +1,277 @@
+:root,
+:root[data-theme="dark"] {
+    --primary-color: #ebebeb;
+    --primary-bg: #1d1d1d;
+    --hover-menu: #898989;
+    --icon-color: #169adc;
+    --icone-tema: #d7b21e;
+    
+}
+
+:root[data-theme="light"] {
+    --primary-color: #1d1d1d;
+    --primary-bg: #ebebeb;
+    --hover-menu: #898989;
+
+}
+
+body{
+    background: var(--primary-bg);  /* fundo */
+    color: var(--primary-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px; 
+}
+
+html[data-theme="light"] .logo {
+    filter: invert(1);
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover{
+  color: var(--hover-menu)
+}
+
+i {
+  color: var(--icon-color);
+}
+p, span{
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* Reset CSS  */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+/* fim reset  */
+
+/* header  */
+#header {
+    display: flex;
+    flex-flow: row wrap;
+    /* Coloca o conteúdo em linha e permite a quebra de linha. */
+    justify-content: space-between;
+    /* Os itens dentro do container flexível serão distribuídos de maneira uniforme ao longo do eixo principal, com espaços iguais entre eles.  */
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    z-index: 2;
+    background: var(--primary-bg);
+}
+
+/* .header-logo .logo */
+.logo {  /* img */
+    width: 3.25rem;  /* comprimento */
+    height: 3.25rem;  /* altura  */
+}
+
+.header-toggle {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#toggleTheme {
+    color: var(--icone-tema);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.menu {   /* UL */
+    display: flex;
+    align-items: center;
+    background: var(--primary-bg);
+    gap: 1rem;
+}
+
+.menu-item {
+    width: 100%;
+}
+
+/* .menu-link {
+    display: flex;
+    align-items: center;
+    gap: .5rem; 
+} */
+
+.header-nav {
+    display: none;
+}
+
+
+/* Menu Mobile */
+
+.menu-mobile {
+    width: 100vw; /*V W = Viewport Width */
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid red;
+}
+
+.menu-mobile .menu-link {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+
+.menu-link.active .menu-icon,
+.menu-link.active .menu-text,
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-text {
+    color: #169adc; /* cor do link */
+}
+.menu-icon, .menu-text{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.menu-icon {
+    font-size: 1.5;
+}
+
+.menu-text {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.menu-principal {
+    gap: 2rem; /* deixa os espacamentos entre linhas */
+}
+
+.menu-social {
+    gap: 2rem;
+}
+
+.menu-social .menu-insta {
+    color: var(--primary-color)
+}
+
+.menu-social .menu-insta:hover {
+    color: orange;
+}
+
+.menu-social .menu-whatss {
+    color: var(--primary-color)
+}
+
+.menu-social .menu-whatss:hover {
+    color: greenyellow;
+}
+
+.menu-social .menu-github {
+    color: var(--primary-color)
+}
+
+.menu-social .menu-github:hover {
+    color: blueviolet;
+}
+
+.menu-social .menu-linkedin {
+    color: var(--primary-color)
+}
+
+.menu-social .menu-linkedin:hover {
+    color:#169adc;
+}
+
+
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    background: transparent;
+    border-radius: 3rem;
+    color: var(--primary-color);
+    border: none; /* ele tira a borda do texto */
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+.btn span, .btn i {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.btn-primary span {
+    color: var(--primary-color);
+}
+.btn-primary {
+    border: 1px solid red ;
+}
+
+/* main */
+#home {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5;
+}
+
+.video iframe {
+    width: 100%;
+    aspect-ratio: 15/9;    
+}
+
+#home, .projetos, .sobre, .contato {
+    padding: 2.5rem 1rem;
+}
+
+
+
+  
+
+/* Responsividade 
+Responsivo
+*/
+
+@media (min-width: 768px) {
+    #header {
+       position: fixed;
+       padding: 1rem 6rem;
+    }
+    .nav-mobile {
+        display: none;
+    }
+    .header-nav{
+        display: flex;
+    }
+
+    .header-nav,
+    .header-toggle{
+        min-width: 17%;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+    
+    }
+    h3 {
+    
+    }
+    #home, .projetos, .sobre {
+        padding: 8rem 6rem 4rem 6rem;
+    }
+}
+
+
