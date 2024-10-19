@@ -1,189 +1,321 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-theme="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thiago Silva 😛 | Meu website</title>
-    <!-- style.css -->
-    <link rel="stylesheet" href="mycss/style.css">
-    <!-- bootstrap icons Link para icons. -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-  </head>
-  <body>
-    <header id="header">
-        <!-- Navegation -->
-      <nav class="header-nav"> <!-- Menu desktop -->
-        <ul class="menu menu-principal">
-          <li class="menu-item">
-            <a href="#home" class="menu-link ">
-             <span class="menu-text"> Home 
-             </span> 
-          </a> 
-          </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thiago Silva🎭 | Meu website</title>
+  <!-- style.css -->
+  <link rel="stylesheet" href="css/estilo.css">
+  <!-- bootstrap icons, aqui vinculei a plataforma do bootstrap, para utilizar os icones. Isso seria uma API. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
 
-        
-          <li class="menu-item">
-            <a href="#projeto" class="menu-link">
-             <span class="menu-text" > projeto 
-             </span> 
-          </a> 
-          </li> 
 
-        
-          <li class="menu-item">
-            <a href="#sobre" class="menu-link">
-             <span class="menu-text" > Sobre 
-             </span> 
-          </a> 
-          </li>
-          
 
-          <li class="menu-item">
-            <a href="#contato" class="menu-link">
-             <span class="menu-text" > Contato 
+<body>
+  <header id="header">
+    <!--Navegation-->
 
-            
-             </span> 
-          </a> 
-          </li>
-        </ul>
-        <!-- Apertando ALT, SHIFT, A(COMANDO DE COMENTARIO) -->
-      </nav>
-      <!-- Fim header -->
+    <nav class="header-nav">
+      <!-- Menu desktop, "nav" serve para criar um menu de navegação ou divisões de conteúdo . -->
+      <ul class="menu menu-principal">
+        <li class="menu-item">
+          <a href="#home" class="menu-link">
+            <span class="menu-text"> Home
+            </span>
+          </a>
+        </li>
+
+        <li class="menu-item">
+          <a href="#projetos" class="menu-link">
+            <span class="menu-text"> Projetos </span>
+          </a>
+        </li>
+
+        <li class="menu-item">
+          <a href="#sobre" class="menu-link">
+
+            <span class="menu-text"> Sobre
+
+            </span>
+          </a>
+
+        </li>
+
+        <li class="menu-item">
+          <a href="#contato" class="menu-link">
+            <span class="menu-text"> Contato
+
+            </span>
+          </a>
+
+        </li>
+
+
+
+      </ul>
+      <!-- Apertando ALT, SHIFT, A(COMANDO DE COMENTARIO) -->
+    </nav>
+    <!-- Fim header -->
+
     <!-- LOGO -->
     <div class="header-logo">
-    <a href="#home">
-        <img src="imagens/logo.png" alt="logo de imagem branca nada importante aqui" class="logo">
-    </a>
+      <a href="#home">
+        <img class="logo" src="imagens/logo.png" alt="Logo de imagem branca nada importante aqui">
+      </a>
     </div>
 
     <div class="header-toggle">
-        <i id="toggleTheme" class="bi bi-sun"></i>
+      <i id="toggleTheme" class="bi bi-sun"> </i>
     </div>
-    </header><!-- FIM DO CABEÇALHO -->
+  </header> <!-- fim cabeçalho -->
 
-    <!-- MENU MOBILE -->
-    <nav class="nav-mobile"> 
-      <ul class="menu menu-mobile">
+  <!-- menu mobile -->
+  <nav class="nav-mobile">
+    <ul class="menu menu-mobile">
 
-          <li class="menu-item">
-              <a href="#home" class="menu-link active">
-                  <i class="menu-icon bi bi-house-door"> </i>
-                  <span class="menu-text"> Home </span>
-              </a>
-          </li>
+      <li class="menu-item">
+        <a href="" class="menu-link active">
+          <i class="menu-icon bi bi-house-door"> </i>
+          <span class="menu-text"> Home </span>
+        </a>
+      </li>
 
-          <li class="menu-item"></li>
-              <a href="#projeto" class="menu-link active">
-                  <i class="menu-icon bi bi-window-stack"> </i>
-                  <span class="menu-text"> Projetos </span>
-              </a>
-          </li>
 
-          <li class="menu-item"></li>
-              <a href="#sobre" class="menu-link active">
-                  <i class="menu-icon bi bi-person"> </i>
-                  <span class="menu-text"> Sobre </span>
-              </a>
-          </li>
 
-          <li class="menu-item"></li>
-              <a href="#contato" class="menu-link active">
-                  <i class="menu-icon bi bi-telephone"> </i>
-                  <span class="menu-text"> Contato </span>
-              </a>
-          </li>
+      <li class="menu-item">
+        <a href="#projetos" class="menu-link">
+          <i class="menu-icon bi bi-window-stack"> </i>
+          <span class="menu-text"> Projetos </span>
+        </a>
+      </li>
 
-      </ul> 
-  </nav> <!-- Fim menu mobile -->
-  <main id="home"> <!-- Principal ou resumo -->
+      <li class="menu-item">
+        <a href="#sobre" class="menu-link">
+          <i class="menu-icon bi bi-person"> </i>
+          <span class="menu-text"> Sobre </span>
+        </a>
+      </li>
+
+      <li class="menu-item">
+        <a href="" class="menu-link">
+          <i class="menu-icon bi-telephone"> </i>
+          <span class="menu-text"> Contato </span>
+        </a>
+      </li>
+
+    </ul>
+  </nav> <!-- Fim menu mobile. Nav serve para criar um menu de navegação ou divisões de conteúdo -->
+
+  <main id="home"> <!--menu principal ou resumo-->
 
     <div class="main-content">
-
-      <h1><b>Thiago de Matos Silva</b> <br>
-      Desenvolvimento Front-End </h1>
-      <!-- titulo / Slogan -->
-    
-      <p>Thiago de Matos Silva, São Paulo - SP, Desenvolvedor</p>
+      <h1> <b>Thiago de Matos Silva,</b> <br>
+        Desenvolvedor Front-End e C++ </h1>
+      <!--Titulo e slogan-->
+      <p>Thiago de Matos Silva, São Paulo/SP, Aprendiz - Bimbo</p>
 
       <ul class="menu menu-social">
 
+
+
         <li>
-           <a href="https://github.com/" target="_blank"> <!-- target serve para entrar em link externos -->
+          <a href="https://github.com/Kazinn-69/kaiky_lula" target="_blank">
+            <!--  o "Target" serve para entrar em um link externo -->
             <i class="menu-github bi bi-github">
-            
+
+            </i> <!-- esse "i" é para colocar ícone
+ -->
+
+          </a>
+        </li>
+
+
+        <li>
+          <a href="https://www.linkedin.com/Kaiky%20Lula/?_l=en_US" target="_blank">
+            <i class="menu-linkedin bi bi-linkedin">
             </i>
-           </a>
+          </a>
+        </li>
+
+
+        <li>
+          <a href="https://www.instagram.com/kzin.yzo/" target="_blank">
+            <i class="menu-insta bi bi-instagram">
+
+            </i>
+
+          </a>
         </li>
 
         <li>
-          <a href="https://br.linkedin.com/?src=go-pa&trk=sem-ga_campid.12619604099_asid.149519181115_crid.657343811716_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.9196692&mcid=6821526239111716925&cid=&gad_source=1&gclid=EAIaIQobChMI3sbX7rDmiAMVblRIAB39PDrnEAAYASAAEgK5FPD_BwE&gclsrc=aw.ds" target="_blank" >
-            <i class='menu-linkedin bx bxl-linkedin-square' >
+          <a href="https://wa.me/+5511970584812" target="_blank">
+            <i class="menu-whatsapp bi bi-whatsapp">
 
             </i>
-           
-           </i>
+
           </a>
-       </li>
-
-       <li>
-        <a href="https://www.instagram.com/thimatos2258/" target="_blank" >
-          <i class='menu-insta bx bxl-instagram'>
-
-          </i>
-         
-         </i>
-        </a>
-     </li>
-
-     <li>
-      <a href="https://wa.me/+5511987732098" target="_blank" >
-        <i class='menu-whatss bx bxl-whatsapp'>
-
-        </i>
-       
-       </i>
-      </a>
-   </li>
-      </ul> <!-- Fim de redes sociais -->
+        </li>
+      </ul> <!-- Fim Redes Sociais -->
 
       <a href="#projetos">
-        <button class="btn btn-primary" > <!-- btn é para todos os botões receberem o mesmo tema -->
-          <span> Ver Projetos  </span> 
-          <i class="bi bi-arrow-down-right"> </i>
+
+        <button class="btn btn-primary "><!--  "btn" é para todos botões receberem a mesma função
+Ver Projetos -->
+          <span>Ver Projetos</span> <!--"span" é para colocar pequenos textos
+-->
+          <i class="bi bi-arrow-down-right"></i>
         </button>
       </a>
 
-      <div class="video" >
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/a63jpBsVZYw?si=Q94u4FNM7-IfhtXP" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <iframe src="https://www.youtube.com/embed/4Ft_Ts4Z3uo?si=LIeUmP5XuB335jbF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-    </div>
+      </div>
+
     </div>
 
 
   </main>
-  
-  <section id="projeto" class="projeto" >
-  <h2> projetos </h2>
-</section>
+  <section id="projetos" class="projetos">
+    <h2> Projetos </h2>
 
-  <section id="sobre" class="sobre" >
-  <h2> sobre </h2>
-</section>
+    <div class="projetos-container">
 
-  <section id="home" class="home" >
-  <h2> home </h2>
-</section>
+      <!-- primeiro projeto -->
+      <div class="projeto-card ">
 
-  <section id="contato" class="contato" >
-  <h2> contato </h2>
-</section>
+        <img src="Imagens/projetos/games-store.jpg" alt="" class="card-cover">
 
-<script src="js/script.js" ></script>
+        <div class="card-body">
 
+          <h3 class="card-title"> Store of the Games</h3>
+
+          <p class="card-descricao"> Loja de Games Online </p>
+
+          <ul class="card-lista">
+
+
+            <ol class="card-item">
+              <i class="bi bi-nintendo-switch bi-ni"></i>
+              Jogos Nintendo Switch
+            </ol>
+
+            <ol class="card-item">
+              <i class="bi bi-playstation bi-ps"></i>
+              Jogos PS5
+            </ol>
+
+            <ol class="card-item">
+              <i class="bi bi-xbox bi-x"></i>
+              Jogos XBOX Series X
+            </ol>
+
+
+          </ul>
+
+          <div class="card-button">
+
+            <button class="btn btn-primary">
+
+              <a href="https://store.steampowered.com/?l=portuguese" target="_blank">
+                <!-- aqui é responsável por abrir uma nova guia ao clicar no botão -->
+                <span>Ver Loja</span>
+                <i class="bi bi-arrow-up-right"> </i>
+              </a>
+
+            </button>
+
+            <button class="btn">
+              <a href="https://github.com/Kazinn-69/kaiky_lula" target="_blank">
+                <span>Repositório</span>
+              </a>
+            </button>
+
+          </div> <!-- fim card button -->
+
+
+        </div> <!-- fim card body -->
+
+      </div> <!-- fim do projeto 1 -->
+
+
+      <!-- segundo projeto -->
+      <div class="projeto-card card-reverse">
+
+        <img src="Imagens/projetos/josisbox.jpg" alt="" class="card-cover">
+
+        <div class="card-body">
+
+          <h3 class="card-title"> Bo0ks Store</h3>
+
+          <p class="card-descricao"> Loja online de venda de livros. </p>
+
+          <ul class="card-lista">
+
+            <ol class="card-item">
+              <i class="bi bi-book bi-b"></i>
+              Diário de um banana
+            </ol>
+
+            <ol class="card-item">
+              <i class="bi bi-book bi-l"></i>
+              Lovecraft
+            </ol>
+
+            <ol class="card-item">
+              <i class="bi bi-magic bi-h"></i>
+              Harry Potter
+            </ol>
+
+
+          </ul>
+
+          <div class="card-button">
+
+            <button class="btn btn-primary">
+
+              <a href="https://www.amazon.com.br/Livros/b/?ie=UTF8&node=6740748011&ref_=nav_cs_books&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522"
+                target="_blank"> <!-- aqui é responsável por abrir uma nova guia ao clicar no botão -->
+                <span>Ver Catálogo</span>
+                <i class="bi bi-arrow-up-right"> </i>
+              </a>
+
+            </button>
+
+            <button class="btn">
+              <a href="https://github.com/Kazinn-69/kaiky_lula" target="_blank">
+                <span>Repositório</span>
+              </a>
+            </button>
+
+          </div> <!-- fim card button -->
+
+
+        </div> <!-- fim card body -->
+
+      </div> <!-- fim do projeto 2 -->
+
+
+    </div> <!-- fim projeto container -->
+
+  </section>
+
+
+  <section id="sobre" class="sobre">
+    <h2> Sobre </h2>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2> Contato</h2>
+  </section>
+
+  <script src="js/script.js"></script>
 </body>
-</html>
 
+</html>
