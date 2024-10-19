@@ -1,0 +1,285 @@
+:root,
+:root[data-theme="dark"] {
+    --primary-color: #ebebeb;
+    --primary-bg: #1d1d1d;
+    --hover-menu: #898989;
+    --icon-color: #169adc;
+    --icone-tema: #d7b21e;
+}
+
+:root[data-theme="light"] {
+    --primary-color: #1d1d1d;
+    --primary-bg: #ebebeb;
+    --hover-menu: #898989;
+
+}
+
+body{
+    background: var(--primary-bg);  /* fundo */
+    color: var(--primary-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px; 
+}
+
+html[data-theme="light"] .logo{
+    filter: invert(1);
+} /* alterando a cor do logo após ficar claro ou escuro */
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover{
+  color: var(--hover-menu)
+}
+
+i {
+  color: var(--icon-color);
+}
+p, span, li{
+    font-size: 1rem;
+}
+
+p{
+    text-align: justify;
+}
+/* Reset CSS  */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+/* fim reset  */
+
+/* header  */
+#header {
+    display: flex;
+    flex-flow: row wrap;
+    /* Coloca o conteúdo em linha e permite a quebra de linha. */
+    justify-content: space-between;
+    /* Os itens dentro do container flexível serão distribuídos de maneira uniforme ao longo do eixo principal, com espaços iguais entre eles.  */
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    z-index: 2;
+    background: var(--primary-bg);
+}
+
+/* .header-logo .logo */
+.logo {  /* img */
+    width: 3.25rem;  /* comprimento */
+    height: 3.25rem;  /* altura  */
+}
+
+.header-toggle {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#toggleTheme {
+    color: var(--icone-tema);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.menu {   /* UL */
+    display: flex;
+    align-items: center;
+    background: var(--primary-bg);
+    gap: 1rem;
+}
+
+.menu-item {
+    width: 100%;
+}
+
+/* .menu-link {
+    display: flex;
+    align-items: center;
+    gap: .5rem; 
+} */
+
+.header-nav {
+    display: none;
+}
+
+
+/* Menu Mobile */
+
+.menu-mobile {
+    width: 100vw; /*V W = Viewport Width */
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid red;
+}
+
+.menu-mobile .menu-link {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+
+.menu-link.active .menu-icon, /* definir a cor do icone, esses links mostrarão as cores so quando passar o mouse por cima.*/ 
+.menu-link.active .menu-text,
+.menu-link:hover .menu-icon, /* Passar o mouse por cima e aparece cor */
+.menu-link:hover .menu-text{
+    color: #169adc; /* cor de link */
+}
+
+.menu-icon, .menu-text{
+    color:var(--primary-color);
+    font-weight: 600;
+}
+
+.menu-icon{
+    font-size: 1.5rem;
+}
+
+
+.menu-text{
+    font-size: 0.75rem;
+    text-transform: uppercase; /* aqui é para ser caixa alta
+     */
+}
+
+.menu-principal{
+    gap: 2rem; /* deixa espaçamento entre os menus/icones. Nos elementos em geral. */
+}
+
+.menu-social{
+    gap: 2rem;
+}
+.menu-social .menu-insta{
+    color:var(--primary-color);
+}
+.menu-social .menu-insta:hover{
+    color: orange;
+}
+
+.menu-social .menu-linkedin{
+    color:var(--primary-color);
+}
+.menu-social .menu-linkedin:hover{
+    color: #169adc;
+}
+
+.menu-social .menu-whatsapp{
+    color:var(--primary-color);
+}
+.menu-social .menu-whatsapp:hover{
+    color: greenyellow
+}
+
+.menu-social .menu-github{
+    color:var(--primary-color);
+}
+.menu-social .menu-github:hover{
+    color: purple;
+}
+
+.btn{ /* aqui estou personalizando o botão do "ver projetos" */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    width: 100%;
+    background: transparent;
+    border-radius: 3rem;
+    color: var(--primary-color);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.05); 
+    transition: ease-in-out 0.5; /* aq demora um tempo para dar um zoom no botão. */
+}
+
+.btn span, .btn i {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.btn-primary span{
+    color: var(--primary-color);
+}
+
+.btn-primary{
+    border: 1px solid var(--icon-color) ;
+}
+
+/* main */
+#home{
+    display: flex;
+    flex-direction: column;
+    gap:4rem ;
+}
+
+.main-content{
+display: flex;
+flex-direction: column;
+gap: 1.5;
+}
+
+.video iframe{
+    width: 100%;
+    aspect-ratio:16/9 ; /* comprimento por altura */
+}
+#home, .projetos, .sobre, .contato{
+    padding: 5rem 10rem;
+}
+/* Responsividade 
+Responsivo
+*/
+
+/* projetos */
+.projetos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.projetos-container {
+        display: flex;
+        flex-direction: column;
+        gap:4rem;
+    
+}
+
+@media (min-width: 768px) {
+    #header {
+       position: fixed;
+       padding: 1rem 6rem;
+    }
+    .nav-mobile {
+        display: none;
+    }
+    .header-nav{
+        display: flex;
+    }
+.header-nav,
+.header-toggle{
+    min-width: 17%;/*  aqui está recuando a logo */
+}
+
+
+h1 {
+    font-size: 5rem;
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+#home, .projetos, .sobre, .contato {
+padding: 8rem 6rem 4rem 6rem;
+}
+}

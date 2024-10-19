@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-theme="dark">
 
-<head>
+<head> <!-- Serve para colocar links  -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thiago Silva🎭 | Meu website</title>
   <!-- style.css -->
   <link rel="stylesheet" href="css/estilo.css">
   <!-- bootstrap icons, aqui vinculei a plataforma do bootstrap, para utilizar os icones. Isso seria uma API. -->
+  <!-- ICONS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- ICONS -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 
@@ -63,7 +67,7 @@
     <!-- LOGO -->
     <div class="header-logo">
       <a href="#home">
-        <img class="logo" src="imagens/logo.png" alt="Logo de imagem branca nada importante aqui">
+        <img class="logo" src="imagens/img/Frame 3.png" alt="Logo de imagem branca nada importante aqui">
       </a>
     </div>
 
@@ -109,94 +113,102 @@
     </ul>
   </nav> <!-- Fim menu mobile. Nav serve para criar um menu de navegação ou divisões de conteúdo -->
 
+
   <main id="home"> <!--menu principal ou resumo-->
+    <div class="header-logo">
+
+
+    </div>
 
     <div class="main-content">
-      <h1> <b>Thiago de Matos Silva,</b> <br>
-        Desenvolvedor Front-End e C++ </h1>
-      <!--Titulo e slogan-->
-      <p>Thiago de Matos Silva, São Paulo/SP, Aprendiz - Bimbo</p>
+      <img class="main-content" src="imagens/Thiago de Matos Silva (1).png"
+        alt="Logo de imagem branca nada importante aqui">
+      </a>
+    </div>
+    <!--Titulo e slogan-->
+    <p>Thiago de Matos Silva, São Paulo/SP, Aprendiz - BMW</p>
 
-      <ul class="menu menu-social">
+    <ul class="menu menu-social">
 
 
 
-        <li>
-          <a href="https://github.com/Kazinn-69/kaiky_lula" target="_blank">
-            <!--  o "Target" serve para entrar em um link externo -->
-            <i class="menu-github bi bi-github">
+      <li>
+        <a href="https://github.com/Kiddead666" target="_blank">
+          <!--  o "Target" serve para entrar em um link externo -->
+          <i class="menu-github bi bi-github">
 
-            </i> <!-- esse "i" é para colocar ícone
+          </i> <!-- esse "i" é para colocar ícone
  -->
 
-          </a>
-        </li>
+        </a>
+      </li>
 
 
-        <li>
-          <a href="https://www.linkedin.com/Kaiky%20Lula/?_l=en_US" target="_blank">
-            <i class="menu-linkedin bi bi-linkedin">
-            </i>
-          </a>
-        </li>
+      <li>
+        <a href="https://www.linkedin.com/in/thiago-matos-811953272" target="_blank">
+          <i class="menu-linkedin bi bi-linkedin">
+          </i>
+        </a>
+      </li>
 
 
-        <li>
-          <a href="https://www.instagram.com/kzin.yzo/" target="_blank">
-            <i class="menu-insta bi bi-instagram">
+      <li>
+        <a href="https://www.instagram.com/kzin.yzo/" target="_blank">
+          <i class="menu-insta bi bi-instagram">
 
-            </i>
+          </i>
 
-          </a>
-        </li>
+        </a>
+      </li>
 
-        <li>
-          <a href="https://wa.me/+5511970584812" target="_blank">
-            <i class="menu-whatsapp bi bi-whatsapp">
+      <li>
+        <a href="https://wa.me/+5511987732098" target="_blank">
+          <i class="menu-whatsapp bi bi-whatsapp">
 
-            </i>
+          </i>
 
-          </a>
-        </li>
-      </ul> <!-- Fim Redes Sociais -->
+        </a>
+      </li>
+    </ul> <!-- Fim Redes Sociais -->
 
-      <a href="#projetos">
+    <a href="#projetos">
 
-        <button class="btn btn-primary "><!--  "btn" é para todos botões receberem a mesma função
+      <button class="btn btn-primary "><!--  "btn" é para todos botões receberem a mesma função
 Ver Projetos -->
-          <span>Ver Projetos</span> <!--"span" é para colocar pequenos textos
+        <span>Ver Projetos</span> <!--"span" é para colocar pequenos textos
 -->
-          <i class="bi bi-arrow-down-right"></i>
-        </button>
-      </a>
+        <i class="bi bi-arrow-down-right"></i>
+      </button>
+    </a>
 
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/a63jpBsVZYw?si=Q94u4FNM7-IfhtXP" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/a63jpBsVZYw?si=Q94u4FNM7-IfhtXP" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-      </div>
+    </div>
 
     </div>
 
 
   </main>
   <section id="projetos" class="projetos">
-    <h2> Projetos </h2>
+    <h2 data-aos="fade-right" data-aos-offset="600" data-aos-easing="ease-in-sine"> Projetos </h2>
 
     <div class="projetos-container">
 
       <!-- primeiro projeto -->
       <div class="projeto-card ">
 
-        <img src="Imagens/projetos/games-store.jpg" alt="" class="card-cover">
+        <img data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine"
+          src="Imagens/projetos/games-store.jpg" alt="" class="card-cover">
 
-        <div class="card-body">
+        <div class="card-body" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
 
           <h3 class="card-title"> Store of the Games</h3>
 
-          <p class="card-descricao"> Loja de Games Online </p>
+          <p class="card-item"> Loja de Games Online </p>
 
           <ul class="card-lista">
 
@@ -246,7 +258,7 @@ Ver Projetos -->
 
 
       <!-- segundo projeto -->
-      <div class="projeto-card card-reverse">
+      <div class="projeto-card card-reverse" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
 
         <img src="Imagens/projetos/josisbox.jpg" alt="" class="card-cover">
 
@@ -254,7 +266,7 @@ Ver Projetos -->
 
           <h3 class="card-title"> Bo0ks Store</h3>
 
-          <p class="card-descricao"> Loja online de venda de livros. </p>
+          <p class="card-item"> Loja online de venda de livros. </p>
 
           <ul class="card-lista">
 
@@ -300,7 +312,63 @@ Ver Projetos -->
         </div> <!-- fim card body -->
 
       </div> <!-- fim do projeto 2 -->
+      <!-- primeiro projeto -->
+      <div class="projeto-card" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
 
+        <img src="Imagens/Captura de tela.png" alt="" class="card-cover">
+
+
+        <div class="card-body">
+
+          <h3 class="card-title"> Portifólio pessoal</h3>
+
+          <p class="card-item">Meu Portifólio</p>
+
+          <ul class="card-lista">
+
+
+            <ol class="card-item">
+              <i class="bi bi-nintendo-switch bi-ni"></i>
+              Programador de C++
+            </ol>
+
+            <ol class="card-item">
+              <i class="bi bi-playstation bi-ps"></i>
+              Programador de Design website (HTML e CSS)
+            </ol>
+
+            <ol class="card-item">
+              <i class="bi bi-xbox bi-x"></i>
+              Programador de python
+            </ol>
+
+
+          </ul>
+
+          <div class="card-button">
+
+            <button class="btn btn-primary">
+
+              <a href="https://store.steampowered.com/?l=portuguese" target="_blank">
+                <!-- aqui é responsável por abrir uma nova guia ao clicar no botão -->
+                <span>Ver Loja</span>
+                <i class="bi bi-arrow-up-right"> </i>
+              </a>
+
+            </button>
+
+            <button class="btn">
+              <a href="https://github.com/Kiddead666" target="_blank">
+                <span>Repositório</span>
+              </a>
+            </button>
+
+          </div> <!-- fim card button -->
+
+
+        </div> <!-- fim card body -->
+
+      </div> <!-- fim do projeto 3 -->
 
     </div> <!-- fim projeto container -->
 
@@ -308,13 +376,46 @@ Ver Projetos -->
 
 
   <section id="sobre" class="sobre">
+
+    <img class="sobre-logo" src="Imagens/3d-rendering-kid-playing-digital-game.jpg">
+
+    <div class="sobre-descricao">
+
+
+
+
+    </div>
+
     <h2> Sobre </h2>
+    <p>Sou o Thiago de Matos, um estudante apaixonado por programação, atualmente explorando linguagens como HTML, CSS e
+      JavaScript. Adoro resolver problemas e criar soluções inovadoras através da tecnologia. Estou sempre em busca de
+      novos desafios e oportunidades para aprimorar minhas habilidades e expandir meu conhecimento. Além de programar,
+      gosto de colaborar em projetos e aprender com a comunidade. Meu objetivo é me tornar um desenvolvedor versátil,
+      capaz de criar experiências web envolventes e funcionais.</p>
+    <div class="sobre-icones">
+      <i class="bi bi-translate"> </i>
+      <span> inglês: Intermediário </span>
+    </div>
+
+    <div class="descricao-button">
+
+      <a href="https://wa.me/+5511987732098" target="_blank">
+        <button class="btn btn-primary">
+          <span> Conecte-se Comigo </span>
+        </button>
+      </a>
+
+    </div>
   </section>
+
 
   <section id="contato" class="contato">
     <h2> Contato</h2>
   </section>
 
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/script.js"></script>
 </body>
 

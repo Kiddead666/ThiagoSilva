@@ -1,0 +1,119 @@
+:root,
+:root[data-theme="dark"] {
+   /*  --cor-texto-primario: #e0e0e0 ; */
+    --primary-color: #e0e0e0 ;   /*  cor para texto */
+    --primary-bg: #000000 ; /*  bg = backgroud */
+    --hover-menu:#646464; /* cor da palavra ao passar o mouse */
+    --icon-color:#1434c2 ;/*  cor do icone*/
+    --icone-tema: #d7b21e; /* icone do sol */
+} 
+:root[data-theme="light"] {
+    --primary-color: #000000 ;
+    --primary-bg: #fff;
+}
+body {
+    background: var(--primary-bg); /* cor do fundo */
+ color: var(--primary-color);
+ font-family: Verdana, Geneva, Tahoma, sans-serif ;
+ font-size: 20px;
+ 
+   a{
+    text-decoration: none;
+    color: var(--primary-color)
+   }
+   
+   a:hover {
+    color: var(--hover-menu); /* ao passar o mouse na frase, a cor muda-se */
+   }
+
+}
+
+i{
+    color: var(--icon-color);
+}
+b{
+    font-weight: 400;
+}
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none; /* remove ou altera caracteristicas da lista, tais como bolinha, nu´meros, etc. */
+/* fim do reset */
+}
+
+
+
+
+/* header */
+#header{
+    display: flex;
+    flex-flow: row wrap;  /* coloca o conteudo em linha e permite que os icones mudem de posicao */
+    justify-content: space-between; /*  espaço iguais entre os itens */
+    align-items: center;  /* alinha os itens */
+    width: 100%;
+    padding:0.5rem 1rem ;
+    z-index: 2;
+}
+/* header logo */
+.logo{  /* img */
+    width: 3.25rem;
+    height: 3.25rem;
+}
+/* area do icone do sol */
+.header-toggle{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#toggleTheme{
+color: var(--icone-tema);
+font-size:2rem ;
+cursor: pointer; /* aparencia do cursor(fica a mãozinha quando passa o mouse no sol) */ 
+
+}
+
+.menu{ /* esse menu é UL */
+display: flex;
+align-items: center;
+background: var(--primary-bg);
+gap: 2rem; /* aqui separa os textos do menu */
+
+}
+
+.menu-item{
+    width: 100%;
+}
+
+.header-nav{
+    display: none;
+}
+
+/* menu mobile */
+.menu-mobile{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid #ff0000;
+}
+.menu-mobile .menu-link{
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+
+/* reponsividade para o cell */
+@media (min-widht: 768px){
+#header{
+    position: fixed;
+    padding: 1rem 6rem;
+}
+.nav-mobile{
+    display: none;
+}
+.header-nav{
+    display: flex;
+}
+}
