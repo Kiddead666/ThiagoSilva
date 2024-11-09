@@ -446,6 +446,91 @@ Responsivo
     gap: 2rem;
 }
 
+.sobre-conteudo2 .col1,
+.sobre-conteudo2 .col2 {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 2rem;
+}
+
+.sobre-conteudo2 .col1 .row1,
+.sobre-conteudo2 .col1 .row2 {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.accordion-header {
+    width: 100%;
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    transition: ease-in-out.3s;
+}
+
+.accordion-header span {
+    color: var(--titulo-accordion);
+}
+
+.accordion-body {
+    display: none;
+    padding: 1.25rem;
+    /* serve para a escrita não ficar na borda da imagem */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .625rem;
+    border: 1px solid var(--primary-color);
+}
+
+.accordion-item.active .accordion-header {
+    background: var(--body-accordion);
+}
+
+.accordion-item.active .accordion-body {
+    display: flex;
+}
+
+.accordion-item.active .bi-caret-down-fill {
+    transform: rotate(180deg);
+}
+
+/* Contato */
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border-top: 1px solid var(--menu-social);
+    /* variavel borda */
+    border-bottom: 1px solid var(--menu-social);
+    /* variavel borda */
+}
+
+.contato p {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    ;
+}
+
+.contato .btn {
+    width: auto;
+    /* Correção */
+}
+
+.contato .email {
+    text-transform: uppercase;
+}
+
 
 /* responsividade aqui */
 @media (min-width: 768px) {
@@ -520,87 +605,7 @@ Responsivo
         grid-template-columns: 40% 60%;
     }
 
-    .sobre-conteudo2 .col1,
-    .sobre-conteudo2 .col2 {
-        display: flex;
-        flex-direction: column;
-        text-align: justify;
-        gap: 2rem;
-    }
 
-    .sobre-conteudo2 .col1 .row1,
-    .sobre-conteudo2 .col1 .row2 {
-        display: flex;
-        flex-direction: column;
-        gap: .5rem;
-    }
-
-    .accordion-header {
-        width: 100%;
-        display: flex;
-        padding: 0.75rem 1rem;
-        justify-content: space-between;
-        align-items: center;
-        border: 1px solid var(--primary-color);
-        background: transparent;
-        text-align: left;
-        cursor: pointer;
-        transition: ease-in-out.3s;
-    }
-
-    .accordion-header span {
-        color: var(--titulo-accordion);
-    }
-
-    .accordion-body {
-        display: none;
-        padding: 1.25rem;
-        /* serve para a escrita não ficar na borda da imagem */
-        flex-direction: column;
-        align-items: flex-start;
-        gap: .625rem;
-        border: 1px solid var(--primary-color);
-    }
-
-    .accordion-item.active .accordion-header {
-        background: var(--body-accordion);
-    }
-
-    .accordion-item.active .accordion-body {
-        display: flex;
-    }
-
-    .accordion-item.active .bi-caret-down-fill {
-        transform: rotate(180deg);
-    }
-
-    /* Contato */
-
-    .contato {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1.5rem;
-        border-top: 1px solid var(--menu-social);
-        /* variavel borda */
-        border-bottom: 1px solid var(--menu-social);
-        /* variavel borda */
-    }
-
-    .contato p {
-        text-align: center;
-        font-family: "Bebas Neue", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        ;
-    }
-    .contato .btn {
-width: auto; /* Correção */
-    }
-    .contato .email {
-        text-transform: uppercase;
-    }
 }
 
 
