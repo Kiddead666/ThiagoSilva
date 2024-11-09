@@ -11,6 +11,7 @@
     --cor-texto: black;
     --titulo-accordion: #e8e8e8;
     --body-accordion: #1d1d1d;
+    --menu-social: #e8e8e8;
 }
 
 
@@ -20,7 +21,7 @@
     --hover-menu: #898989;
     --titulo-accordion: #161616;
     --body-accordion: #ececec;
-
+    --menu-social: #1d1d1d;
 }
 
 body {
@@ -485,6 +486,10 @@ Responsivo
     .contato {
         padding: 8rem 6rem 4rem 6rem;
     }
+
+    .contato {
+        padding: 6rem;
+    }
 }
 
 /* fim do 768px */
@@ -567,6 +572,34 @@ Responsivo
 
     .accordion-item.active .bi-caret-down-fill {
         transform: rotate(180deg);
+    }
+
+    /* Contato */
+
+    .contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        border-top: 1px solid var(--menu-social);
+        /* variavel borda */
+        border-bottom: 1px solid var(--menu-social);
+        /* variavel borda */
+    }
+
+    .contato p {
+        text-align: center;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        ;
+    }
+    .contato .btn {
+width: auto; /* Correção */
+    }
+    .contato .email {
+        text-transform: uppercase;
     }
 }
 
